@@ -1,4 +1,3 @@
-
 import { PromptSuite } from "@/types";
 
 export const promptSuites: PromptSuite[] = [
@@ -131,6 +130,32 @@ export const promptSuites: PromptSuite[] = [
       "Write a persuasive product description for [PRODUCT] that highlights [FEATURES], emphasizes [BENEFITS], addresses [PAIN POINTS], and includes a strong call to action."
     ],
     useCase: "A marketing manager using the Marketing Suite to develop campaign strategies, write persuasive copy, create engaging social media content, and design email sequences that convert prospects into customers."
+  },
+  {
+    id: "ethical-hacking-suite",
+    slug: "ethical-hacking",
+    name: "Ethical Hacking Suite",
+    category: "Security",
+    shortDescription: "Master ethical hacking and cybersecurity with AI-powered prompts for penetration testing and security analysis.",
+    fullDescription: "The Ethical Hacking Suite empowers security professionals and aspiring ethical hackers with 50 expertly crafted prompts for security assessment, vulnerability analysis, and penetration testing. From network security to web application testing, these prompts guide you through professional security practices while maintaining ethical standards. Perfect for security researchers, penetration testers, and IT professionals focused on strengthening cybersecurity measures.",
+    price: 79.99,
+    originalPrice: 119.99,
+    image: "/technical-icon.svg",
+    features: [
+      "Penetration testing frameworks",
+      "Security assessment templates",
+      "Vulnerability analysis guides",
+      "Network security protocols",
+      "Web application security testing",
+      "Social engineering awareness",
+      "Security report generation"
+    ],
+    samplePrompts: [
+      "Create a comprehensive security assessment plan for [SYSTEM_TYPE] focusing on [SECURITY_ASPECTS] and common vulnerabilities.",
+      "Generate a structured approach to identify and analyze potential security vulnerabilities in [APPLICATION_TYPE] using [METHODOLOGY].",
+      "Develop a detailed security report template that documents findings from [TEST_TYPE] with severity ratings and mitigation recommendations."
+    ],
+    useCase: "A cybersecurity consultant using the Ethical Hacking Suite to conduct thorough security assessments, identify vulnerabilities, and provide detailed reports with actionable recommendations for improving system security."
   }
 ];
 
