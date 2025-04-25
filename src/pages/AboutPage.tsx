@@ -1,5 +1,6 @@
-
 import { useEffect } from "react";
+import { ParadoxContainer } from "@/components/ParadoxContainer";
+import { Check } from "lucide-react";
 
 const AboutPage = () => {
   // Scroll to top on page load
@@ -70,40 +71,55 @@ const AboutPage = () => {
           </div>
         </div>
         
-        <div className="bg-secondary/50 rounded-lg p-8 md:p-12">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6">Our Team</h2>
-            <p className="text-lg mb-8">
-              ZenithPrompts brings together talent from diverse backgrounds including AI research, content creation, education, software development, and business strategy.
-            </p>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-24 h-24 rounded-full bg-zenith-200 mx-auto mb-4 overflow-hidden">
-                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member" className="w-full h-full object-cover" />
+        <ParadoxContainer>
+          <div className="p-8 md:p-12">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl font-bold mb-6">Why Choose ZenithPrompts</h2>
+              <div className="grid gap-6 md:grid-cols-2">
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="h-8 w-8 rounded-lg bg-zenith-600/10 flex items-center justify-center flex-shrink-0">
+                      <Check className="h-5 w-5 text-zenith-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-2">Expert-Crafted Prompts</h3>
+                      <p className="text-muted-foreground">Each prompt is meticulously designed and tested by AI specialists to ensure optimal results.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="h-8 w-8 rounded-lg bg-zenith-600/10 flex items-center justify-center flex-shrink-0">
+                      <Check className="h-5 w-5 text-zenith-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-2">Continuous Updates</h3>
+                      <p className="text-muted-foreground">Our prompts evolve with AI technology, ensuring you always have access to the most effective techniques.</p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="font-bold">Alex Morgan</h3>
-                <p className="text-sm text-muted-foreground">Founder & CEO</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-24 h-24 rounded-full bg-zenith-200 mx-auto mb-4 overflow-hidden">
-                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member" className="w-full h-full object-cover" />
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="h-8 w-8 rounded-lg bg-zenith-600/10 flex items-center justify-center flex-shrink-0">
+                      <Check className="h-5 w-5 text-zenith-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-2">Professional Support</h3>
+                      <p className="text-muted-foreground">Get guidance from our expert team to maximize the effectiveness of your AI interactions.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="h-8 w-8 rounded-lg bg-zenith-600/10 flex items-center justify-center flex-shrink-0">
+                      <Check className="h-5 w-5 text-zenith-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-2">Industry-Specific Solutions</h3>
+                      <p className="text-muted-foreground">Tailored prompt suites designed for specific industries and use cases.</p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="font-bold">Jennifer Wu</h3>
-                <p className="text-sm text-muted-foreground">Lead Prompt Engineer</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-24 h-24 rounded-full bg-zenith-200 mx-auto mb-4 overflow-hidden">
-                  <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Team Member" className="w-full h-full object-cover" />
-                </div>
-                <h3 className="font-bold">Marcus Chen</h3>
-                <p className="text-sm text-muted-foreground">Product Director</p>
               </div>
             </div>
           </div>
-        </div>
+        </ParadoxContainer>
       </div>
     </div>
   );
