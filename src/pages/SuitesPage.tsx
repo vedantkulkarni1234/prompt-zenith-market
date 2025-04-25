@@ -1,12 +1,16 @@
-import { useState } from 'react';
+
+import { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { Card, CardContent } from "@/components/ui/card";
+import { Link } from 'react-router-dom';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/hooks/use-cart";
 import { ShoppingCart } from "lucide-react";
 import BackgroundScene from '@/components/BackgroundScene';
 import ParadoxContainer from '@/components/ParadoxContainer';
 import { PromptSuite } from '@/types';
+import { promptSuites } from '@/data/prompt-suites';
 
 const SuitesPage = () => {
   const { addItem, isInCart } = useCart();
